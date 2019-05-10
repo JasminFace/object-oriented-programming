@@ -5,3 +5,7 @@ class Cat:
         self.name = name
         self.food = preferred_food
         self.time = meal_time
+
+
+muca = Cat("Muca", "dry food", 8)
+chava = Cat("Chava", "whatever you're eating", 14)

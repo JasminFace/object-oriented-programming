@@ -6,6 +6,11 @@ class Cat:
         self.food = preferred_food
         self.time = meal_time
 
+    def __str__(self):
+        return f"Name: {self.name} Preferred food: {self.food} Usual meal time: {self.time}"
 
 muca = Cat("Muca", "dry food", 8)
 chava = Cat("Chava", "whatever you're eating", 14)
+
+print(muca)
+print(chava)

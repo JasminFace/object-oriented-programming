@@ -10,8 +10,23 @@ class Player:
 
     def level_up(self):
         self.lives += 1
+    
+    def collect_treasure(self):
+        self.gold_coins += 1
+        if self.gold_coins % 10 == 0:
+            return self.level_up()
+        else: None
 
 player1 = Player()
 print(player1)
-player1.level_up()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
+player1.collect_treasure()
 print(player1)

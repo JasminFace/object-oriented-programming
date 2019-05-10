@@ -15,8 +15,13 @@ class Cat:
         else:
             return f"{self.time} AM"
 
+    def meow(self):
+        return f"My names is {self.name} and I like to eat {self.food} at {self.eats_at()}. =^_^="
+
 muca = Cat("Muca", "dry food", 8)
 chava = Cat("Chava", "whatever you're eating", 14)
 
 print(muca)
+print(muca.meow())
 print(chava)
+print(chava.meow())

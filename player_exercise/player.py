@@ -8,5 +8,10 @@ class Player:
     def __str__(self):
         return f"Lives: {self.lives}  Health: {self.health_points}  Gold Coins: {self.gold_coins}"
 
+    def level_up(self):
+        self.lives += 1
+
 player1 = Player()
+print(player1)
+player1.level_up()
 print(player1)
